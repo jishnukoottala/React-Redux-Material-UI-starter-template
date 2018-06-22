@@ -1,0 +1,279 @@
+/*a{
+    border: 10px;
+    box-sizing: border-box;
+    display: block;
+    font-family: Roboto, sans-serif;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    font-size: 16px;
+    font-weight: inherit;
+    position: relative;
+    z-index: 1;
+    color: rgb(52, 47, 46);
+    line-height: 16px;
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    background: none;
+        margin-left: 0px;
+    padding: 16px;
+    position: relative;
+}*/
+
+a{text-decoration: none;
+color:inherit;
+}
+
+.iconbuttonsyle{
+    margin-left:-12px;
+    margin-right:20px
+}
+
+.headertypoclass{
+    flex:1;
+}
+
+.sidelistwrapper{
+
+    width:250px;
+    /*// background-color: white !important;*/
+    
+    
+   
+}
+
+.appbarwrapper{
+    flex-grow:1;
+}
+
+.drawerclass{
+   /*// background-color: white;*/
+}
+
+.NavLinkWrapper{
+    width:100%;
+    max-width:360px;
+    /*background-color: white;
+    color:black;*/
+}
+
+.NavLinkItem{
+
+    max-width: 360px;
+   
+    
+   
+}
+.NavLinkItem nav:hover{
+   /*// background-color:#cbcbdc !important;*/
+}
+
+.NavLinkItem-selected nav{
+
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+.innernavitem{
+    color:black !important;
+}
+.innernavitem h3{
+    color:black !important;
+}
+
+
+.footer-container-box {
+    background-color: #f1f3f4;
+    height:12vh;
+    text-align: center;
+    padding-top:10px;
+    color:black;
+    margin-top:14px;
+}
+
+.footer-container-box h1{
+   color:rgba(0, 0, 0, 0.4);
+}
+
+.bodyComponent{
+    min-height: 85vh;
+}
+
+.login-page-class{
+    text-align:center;
+}
+
+.login-page-class h1{
+    color:black;  
+     margin-top: 15px;  
+}
+.forms-page-genderclassname{
+        flex-direction: row !important;
+}
+
+.loginPaper{
+
+       width: 300px;
+    margin: 0 auto;
+    z-index: 99;
+    display: block;
+    margin-top: 1.5em;
+    background: transparent;
+    border-radius: .25em .25em .4em .4em;
+    text-align: center;
+    
+    color: #fff;
+    padding-bottom:1.5em;
+    margin-bottom:1em;
+}
+
+.loginheaderpart{
+        text-align: center;
+    margin-top: 1.5em;
+    opacity: 0.7;
+    padding: 9px;
+    background: #0766b9;
+}
+
+.contact-page-wrapper{
+    /*flex-grow:1*/
+}
+
+.contact-page-paper{
+    text-align: center;
+}
+.Topgridcontactpage{
+
+}
+
+
+.loginheaderpart h1{
+color:white;
+}
+
+.contact-page-name-list-field{
+    width:300px;
+}
+
+.loginformgroup {
+
+    margin-top:0.5em;
+    position: relative;
+    margin-bottom: 40px;
+        align-items: flex-end;
+        width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    
+}
+.loginformgroup div{
+    color:black;
+    margin-left:0.25em;
+    width:15em;
+   
+}
+.loginformgroup svg{
+    color:black;
+}
+
+form{
+    padding: 30px;
+    padding-top: 60px;
+}
+
+.loginbutton{
+
+position: relative;
+    padding: 8px 45px;
+    line-height: 30px;
+    overflow: hidden;
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    background-color: #ff0077;
+    color: #ecf0f1;
+    transition: background-color .3s;
+}
+
+.logintypography{
+    color:white !important;
+}
+
+.homepagepaper{
+
+    padding:10px;
+    font-family: inherit;
+}
+
+.landingPagebodyComponent{
+
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+     min-height: 85vh;
+     /*text-align: center;*/
+     
+}
+.getstartedpagepaper{
+
+    padding:30px;
+}
+
+
+/* Media queries for desktop */
+@media only screen and (min-width: 768px) {
+
+.contact-page-name-list-field{
+    width:400px;
+}
+
+.loginPaper{
+
+       width: 420px;}
+
+       .loginheaderpart{
+        text-align: center;
+    margin-top: 3em;
+    opacity: 0.7;
+    padding: 15px;
+    background: #0766b9;
+}
+
+.loginformgroup div{
+    color:black;
+    margin-left:0.25em;
+    width:19em;
+   
+}
+
+}
+
+
+/* Media query for tablets */
+@media only screen and (min-width: 600px) {
+
+
+       .contact-page-name-list-field{
+    width:400px;
+}
+
+.loginPaper{
+
+       width: 420px;}
+
+       .loginheaderpart{
+        text-align: center;
+    margin-top: 3em;
+    opacity: 0.7;
+    padding: 15px;
+    background: #0766b9;
+}
+
+.loginformgroup div{
+    color:black;
+    margin-left:0.25em;
+    width:19em;
+   
+}
+
+}
