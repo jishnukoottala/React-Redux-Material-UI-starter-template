@@ -1,4 +1,4 @@
-import React from 'React';
+import React, { Component } from 'react';
 
 import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
@@ -22,7 +22,7 @@ import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormLabel from '@material-ui/core/FormLabel';
 
-export class FormsPage extends React.Component{
+export class FormsPage extends Component{
 
   state={
     messageopen:false,
@@ -49,7 +49,7 @@ onSubmit = ()=>{
   this.giveSuccessMessage('send successfully ');
 
   //this.props.startAddLogin(user);
-  
+
  // this.props.history.push('/');
 
 };
@@ -83,18 +83,18 @@ render(){
           open={this.state.messageopen}
           autoHideDuration={2000}
           onClose={this.handleClose}
-         
+
           ContentProps={{
             'aria-describedby': 'message-id',
           }}
           message={<span id="message-id">{message}</span>}
           action={[
-            
+
             <IconButton
               key="close"
               aria-label="Close"
               color="inherit"
-             
+
               onClick={this.handleClose}
             >
               <CloseIcon />
@@ -192,7 +192,7 @@ render(){
         label="Date of Birth"
         type="date"
         defaultValue="1997-05-24"
-        
+
         InputLabelProps={{
           shrink: true,
         }}
@@ -208,7 +208,7 @@ render(){
           <RadioGroup
             aria-label="gender"
             name="gender1"
-            
+
             value={this.state.gender}
             onChange={this.handleGenderChange}
           style={{
@@ -230,8 +230,8 @@ render(){
 <Grid item xs={12} lg={12} md={12} style={{ marginTop: 10 }}>
 <Button type="button" color="primary" variant="raised" onClick={this.onSubmit}>Submit</Button>
           </Grid>
-      
-      
+
+
         </Grid>
       </Paper>
         </Grid>

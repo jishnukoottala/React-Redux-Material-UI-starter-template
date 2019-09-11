@@ -1,4 +1,4 @@
-import React from 'React';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import {login} from '../store/actions/auth';
 import Typography from '@material-ui/core/Typography';
@@ -13,13 +13,13 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import Key from '@material-ui/icons/VpnKey';
 import Button from '@material-ui/core/Button';
 
-export class LoginPage extends React.Component{
+export class LoginPage extends Component{
 
 OnClickLogin = ()=>{
 
 
   this.props.startLogin('1284565ertr');
-  
+
   this.props.history.push('/home');
 
 };
@@ -27,7 +27,7 @@ OnClickLogin = ()=>{
 render(){
   return (
     <div className="login-page-class">
-  
+
 
 
       <Paper className="loginPaper">
@@ -41,20 +41,20 @@ render(){
         </Typography>
         <form>
     <div className="loginformgroup">
-       
+
             <AccountCircle />
-         
+
             <TextField id="input-username" label="Username" />
-         
+
         </div>
         <div className="loginformgroup">
 
 
-          
+
             <Key />
-          
+
             <TextField type="password" id="input-password" label="Password" />
-         
+
         </div>
         </form>
 
