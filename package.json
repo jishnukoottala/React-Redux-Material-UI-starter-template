@@ -4,8 +4,9 @@
   "description": "react-boiler-plate-code",
   "main": "app.js",
   "scripts": {
+    "start": "http-server ./public --port 8080 ",
     "build": "webpack",
-    "dev-server": "webpack-dev-server"
+    "dev": "webpack-dev-server"
   },
   "author": "jishnu koottala",
   "license": "MIT",
@@ -21,6 +22,8 @@
     "css-loader": "^0.28.11",
     "file-loader": "^1.1.11",
     "fusioncharts": "^3.12.2",
+    "html-webpack-plugin": "^4.5.0",
+    "http-server": "^0.12.3",
     "material-ui-image": "^3.0.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
