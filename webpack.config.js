@@ -1,5 +1,5 @@
 var path = require('path');
-
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode:'development',
@@ -37,5 +37,11 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, 'public'),
     historyApiFallback: true // this prevents the default browser full page refresh on form submission and link change
-  }
+  },
+  plugins: [
+  new HtmlWebpackPlugin({
+    filename: path.join(__dirname, 'public')+'/index.html',
+    template: 'src/index.html',
+    })
+  ]
 };
