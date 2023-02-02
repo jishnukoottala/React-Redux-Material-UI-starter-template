@@ -36,6 +36,6 @@
   },
   "devDependencies": {
     "url-loader": "^1.0.1",
-    "webpack-cli": "^2.0.15"
+    "webpack-cli": "^5.0.1"
   }
 }
